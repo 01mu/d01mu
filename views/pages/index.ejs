@@ -2,8 +2,100 @@
 
 <html>
     <head>
-    <title>mu</title>
+        <meta charset="utf-8">
+        <title>Leviathan Development</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body
+            {
+                font-family: Verdana, Geneva, sans-serif;
+                background-color: #fafafa;
+            }
+
+            .body
+            {
+                margin: 0 auto;
+                max-width: 800px;
+            }
+
+            .box-w
+            {
+                border-style: solid;
+                border-color: #cccccc;
+                border-width: 1px;
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .box-g
+            {
+                background-color: #e0fcdb;
+                border-style: solid;
+                border-color: #cccccc;
+                border-width: 1px;
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .title
+            {
+                border-style: solid;
+                border-color: #cccccc;
+                border-width: 1px;
+                padding: 60px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 40px;
+                text-align: center;
+                background-color: #dbedfc;
+            }
+        </style>
     </head>
     <body>
+        <div class="container-fluid">
+            <div class="body">
+                <div class="title">
+                    Leviathan Development
+                </div>
+                <span id="teamName"></span>
+                <span id="employeeId"></span>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="box-g">
+                            contents
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box-g">
+                            Android
+                        </div>
+                        <div class="box-w">
+                            ■ Smallfolio<br>
+                            ■ Some Quotes<br>
+                            ■ Clickipedia<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script>
+        var teamName = "<%=teamName%>";
+        var employeeId = "<%=employeeId%>";
+
+        document.getElementById("teamName")
+            .appendChild(document.createTextNode(teamName));
+
+        document.getElementById("employeeId")
+            .appendChild(document.createTextNode(employeeId));
+    </script>
 </html>
