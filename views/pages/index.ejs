@@ -66,6 +66,8 @@
                 <div class="title">
                     Leviathan Development
                 </div>
+                <span id="teamName"></span>
+                <span id="employeeId"></span>
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="box-g">
@@ -86,4 +88,14 @@
             </div>
         </div>
     </body>
+    <script>
+        var teamName = "<%=teamName%>";
+        var employeeId = "<%=employeeId%>";
+
+        document.getElementById("teamName")
+            .appendChild(document.createTextNode(teamName));
+
+        document.getElementById("employeeId")
+            .appendChild(document.createTextNode(employeeId));
+    </script>
 </html>
