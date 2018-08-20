@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" ng-app=app>
     <head>
         <meta charset="utf-8">
+        <link rel="icon" type="image/png" href=
+            "https://smallfolio.bitnamiapp.com/dl_icon/FUCK.png">
         <title>Leviathan Development</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <style>
             body
             {
@@ -60,42 +63,12 @@
             }
         </style>
     </head>
-    <body>
+    <body ng-controller="main">
         <div class="container-fluid">
             <div class="body">
-                <div class="title">
-                    Leviathan Development
-                </div>
-                <span id="teamName"></span>
-                <span id="employeeId"></span>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="box-g">
-                            contents
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="box-g">
-                            Android
-                        </div>
-                        <div class="box-w">
-                            ■ Smallfolio<br>
-                            ■ Some Quotes<br>
-                            ■ Clickipedia<br>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <center>Down for maintenance</center>
             </div>
         </div>
     </body>
-    <script>
-        var teamName = "<%=teamName%>";
-        var employeeId = "<%=employeeId%>";
-
-        document.getElementById("teamName")
-            .appendChild(document.createTextNode(teamName));
-
-        document.getElementById("employeeId")
-            .appendChild(document.createTextNode(employeeId));
-    </script>
 </html>
