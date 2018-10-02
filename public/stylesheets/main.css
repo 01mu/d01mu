@@ -1,27 +1,142 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+.titlebox, .footerbox
+{
+  background-color: #aaddff;
+  text-align: center;
+}
 
+.titlebox
+{
+  padding: 60px;
+  padding-top: 100px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.titletext
+{
+  font-size: 40px;
+}
+
+.headertext
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desctext
+{
+  width: 80%;
+}
+
+.imagetext
+{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ width: 20%;
+}
+
+.itemtext
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footerbox
+{
+  padding: 30px;
+  margin-top: 20px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.footertext
+{
+  font-size: 20px;
+}
+
+.subtitletext
+{
+  font-size: 20px;
+}
+
+body
+{
+  background-color: #ffffff;
+}
+
+.body
+{
+  margin: 0 auto;
+  max-width: 90%;
+  font-size: 17.5px;
+}
+
+.flex
+{
+  display: flex;
+}
+
+.about
+{
+  background-color: #e2f5ff;
+  padding: 20px;
+}
+
+.box1, .box2
+{
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box1, .box2, .header, .about
+{
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 15px;
+}
+
+.header
+{
+  padding: 20px;
+  background-color: #fafafa;
+  margin-top: 30px;
+}
+
+.box1
+{
+  background-color: #e2f5ff;
+}
+
+.box2
+{
+  background-color: #e2f7ff;
+}
+
+.box1:hover, .box2:hover
+{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar-fixed-top
+{
+    background: #87cfff;
+    border-color: #000000;
+}
+
+.navbar-header .navbar-brand
+{
+    color: #000000;
+    font-size: 20px;
+}
+
+.navbar-header .navbar-brand:hover
+{
+    cursor: pointer;
+}

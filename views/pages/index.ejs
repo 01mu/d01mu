@@ -3,72 +3,194 @@
 <html lang="en" ng-app=app>
     <head>
         <meta charset="utf-8">
-        <link rel="icon" type="image/png" href=
-            "https://smallfolio.bitnamiapp.com/dl_icon/FUCK.png">
-        <title>Leviathan Development</title>
+        <link rel="icon" type="image/png" href="web2.png">
+        <title>LD</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <style>
-            body
-            {
-                font-family: Verdana, Geneva, sans-serif;
-                background-color: #fafafa;
-            }
-
-            .body
-            {
-                margin: 0 auto;
-                max-width: 800px;
-            }
-
-            .box-w
-            {
-                border-style: solid;
-                border-color: #cccccc;
-                border-width: 1px;
-                padding: 15px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                font-size: 15px;
-                text-align: left;
-            }
-
-            .box-g
-            {
-                background-color: #e0fcdb;
-                border-style: solid;
-                border-color: #cccccc;
-                border-width: 1px;
-                padding: 15px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                font-size: 20px;
-                text-align: center;
-            }
-
-            .title
-            {
-                border-style: solid;
-                border-color: #cccccc;
-                border-width: 1px;
-                padding: 60px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                font-size: 40px;
-                text-align: center;
-                background-color: #dbedfc;
-            }
-        </style>
+        <link rel = "stylesheet" type = "text/css" href = "stylesheets/main.css" />
     </head>
     <body ng-controller="main">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LD</a>
+            </div>
+            <ul class="nav navbar-nav" style="margin-top: 15px;">
+                <li style="margin-right: 10px;">
+                    <table>
+                        <tr>
+                            <td><img src="about.png" alt="Smiley face" height="16" width="16"></td>
+                            <td>&nbsp;<a href="#about">About</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li style="margin-right: 10px;">
+                    <table>
+                        <tr>
+                            <td><img src="web.png" alt="Smiley face" height="16" width="16"></td>
+                            <td>&nbsp;<a href="#web">Web</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li style="margin-right: 10px;">
+                    <table>
+                        <tr>
+                            <td><img src="mobile.png" alt="Smiley face" height="16" width="16"></td>
+                            <td>&nbsp;<a href="#mobile">Mobile</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li style="margin-right: 10px;">
+                    <table>
+                        <tr>
+                            <td><img src="projects.png" alt="Smiley face" height="16" width="16"></td>
+                            <td>&nbsp;<a href="#projects">Projects</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li style="margin-right: 10px;">
+                    <table>
+                        <tr>
+                            <td><img src="bots.png" alt="Smiley face" height="16" width="16"></td>
+                            <td>&nbsp;<a href="#bots">Bots</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </nav>
+        <div class="titlebox">
+            <div class="titletext">
+                title goes here
+            </div>
+            <div class="subtitletext">
+                subtitle goes here
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="body">
-                <br>
-                <center>Down for maintenance</center>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header" id="about">
+                            <div class="headertext">
+                                <img src="about.png" alt="Smiley face" height="17.5" width="17.5">
+                                About
+                            </div>
+                        </div>
+                        <div class="about">
+                            <%= about[0].text %>
+                        </div>
+                        <div class="header" id="web">
+                            <div class="headertext">
+                                <img src="web.png" alt="Smiley face" height="17.5" width="17.5">
+                                Web
+                            </div>
+                        </div>
+                        <% for (var result in web) { %>
+                                <%if (result % 2 == 0) { %>
+                                    <div class="box1">
+                                <% } else {%>
+                                    <div class="box2">
+                                <% } %>
+                                <div class="flex">
+                                    <div class="imagetext">
+                                        <img src="<%= web[result].image %>" height="64" width="64">
+                                    </div>
+                                    <div class="desctext">
+                                        <div class="itemtext">
+                                            <a href="<%= web[result].link %>"><%= web[result].title %></a>
+                                    </div>
+                                    <%= web[result].body %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                        <div class="header" id="projects">
+                            <div class="headertext">
+                                <img src="projects.png" alt="Smiley face" height="17.5" width="17.5">
+                                Projects
+                            </div>
+                        </div>
+                        <% for (var result in projects) { %>
+                            <%if (result % 2 == 0) { %>
+                                <div class="box1">
+                        <% } else {%>
+                                <div class="box2">
+                        <% } %>
+                        <div class="flex">
+                            <div class="imagetext">
+                                <img src="<%= projects[result].image %>" height="64" width="64">
+                            </div>
+                            <div class="desctext">
+                                <div class="itemtext">
+                                    <a href="<%= projects[result].link %>"><%= projects[result].title %></a>
+                                </div>
+                                <%= projects[result].body %>
+                            </div>
+                            </div>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="header" id="mobile">
+                            <div class="headertext">
+                                <img src="mobile.png" alt="Smiley face" height="17.5" width="17.5">
+                                Mobile
+                            </div>
+                        </div>
+                        <% for (var result in mobile) { %>
+                            <%if (result % 2 == 0) { %>
+                                <div class="box1">
+                            <% } else {%>
+                                <div class="box2">
+                            <% } %>
+                            <div class="flex">
+                                <div class="imagetext">
+                                    <img src="<%= mobile[result].image %>" height="64" width="64">
+                                </div>
+                                <div class="desctext">
+                                    <div class="itemtext">
+                                        <a href="<%= mobile[result].link %>"><%= mobile[result].title %></a>
+                                    </div>
+                                    <%= mobile[result].body %>
+                                </div>
+                            </div>
+                            </div>
+                        <% } %>
+                        <div class="header" id="bots">
+                            <div class="headertext">
+                                <img src="bots.png" alt="Smiley face" height="17.5" width="17.5">
+                                Bots
+                            </div>
+                        </div>
+                        <% for (var result in bots) { %>
+                            <%if (result % 2 == 0) { %>
+                                <div class="box1">
+                            <% } else {%>
+                                <div class="box2">
+                            <% } %>
+                            <div class="flex">
+                                <div class="imagetext">
+                                    <img src="<%= bots[result].image %>" height="64" width="64">
+                                </div>
+                                <div class="desctext">
+                                    <div class="itemtext">
+                                        <a href="<%= bots[result].link %>"><%= bots[result].title %></a>
+                                    </div>
+                                    <%= bots[result].body %>
+                                </div>
+                            </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
+    <div class="footerbox">
+        <div class="footertext">
+            LD
+        </div>
+    </div>
 </html>
