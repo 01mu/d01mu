@@ -83,7 +83,7 @@ body
 
 .about
 {
-  background-color: #e2f5ff;
+  background-color: #fafafa;
   padding: 20px;
 }
 
@@ -104,18 +104,18 @@ body
 .header
 {
   padding: 20px;
-  background-color: #fafafa;
+  background-color: #e2f5ff;
   margin-top: 30px;
 }
 
 .box1
 {
-  background-color: #e2f5ff;
+  background-color: #fafafa;
 }
 
 .box2
 {
-  background-color: #e2f7ff;
+  background-color: #fefefe;
 }
 
 .box1:hover, .box2:hover
