@@ -120,7 +120,7 @@ body
 
 .box1:hover, .box2:hover
 {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   cursor: pointer;
 }
 
