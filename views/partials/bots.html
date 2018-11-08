@@ -1,0 +1,30 @@
+<div class="header" id="bots">
+    <div class="headertext">
+        <img src="bots.png" height="17.5" width="17.5">
+        Bots
+    </div>
+</div>
+<% for (var result in bots) { %>
+<% if (result % 2 == 0) { %>
+<div class="box1">
+<% } else {%>
+<div class="box2">
+<% } %>
+    <div class="flex">
+        <div class="imagetext">
+            <img src="<%= bots[result].image %>" height="64" width="64">
+        </div>
+        <div class="desctext">
+            <div class="itemtext">
+                <a href="<%= bots[result].link %>"><%= bots[result].title %></a>
+            </div>
+            <div class="desc">
+                <%= bots[result].body %>
+            </div>
+            <div class="small">
+                Built with: <%= bots[result].built %>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>

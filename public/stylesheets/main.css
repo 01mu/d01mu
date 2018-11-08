@@ -1,40 +1,39 @@
 .titlebox, .footerbox
 {
-  background-color: #aaddff;
-  text-align: center;
+    background-color: #aaddff;
+    text-align: center;
 }
 
 .titlebox
 {
-  padding: 60px;
-  padding-top: 100px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+    padding: 80px;
+    padding-top: 120px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 .titletext
 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .headertext
 {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .desctext
 {
-  width: 80%;
+    width: 80%;
 }
 
 .imagetext
 {
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
- width: 20%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 20%;
 }
 
 .itemtext
@@ -42,86 +41,86 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .footerbox
 {
-  padding: 30px;
-  margin-top: 20px;
-  border-top-style: solid;
-  border-top-width: 1px;
+    padding: 30px;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 .footertext
 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .subtitletext
 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 body
 {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .body
 {
-  margin: 0 auto;
-  max-width: 90%;
-  font-size: 17.5px;
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 17.5px;
 }
 
 .flex
 {
-  display: flex;
+    display: flex;
 }
 
 .about
 {
-  background-color: #fafafa;
-  padding: 20px;
+    font-size: 15px;
+    background-color: #fafafa;
+    padding: 20px;
 }
 
 .box1, .box2
 {
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .box1, .box2, .header, .about
 {
-  border-style: solid;
-  border-width: 1px;
-  margin-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 15px;
 }
 
 .header
 {
-  padding: 20px;
-  background-color: #e2f5ff;
-  margin-top: 30px;
+    padding: 20px;
+    background-color: #e2f5ff;
+    margin-top: 30px;
 }
 
 .box1
 {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 .box2
 {
-  background-color: #fefefe;
+    background-color: #fefefe;
 }
 
 .box1:hover, .box2:hover
 {
-  background-color: #f1f1f1;
-  cursor: pointer;
+    background-color: #f1f1f1;
 }
 
 .navbar-fixed-top
@@ -139,4 +138,22 @@ body
 .navbar-header .navbar-brand:hover
 {
     cursor: pointer;
+}
+
+.desc
+{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.small
+{
+    font-size: 12px;
+    margin-top: 7.5px;
+    color: grey;
+}
+
+a
+{
+    color: black;
 }
