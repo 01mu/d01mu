@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const db = mongoose.connection;
 const Schema = mongoose.Schema;
 
-const dbUrl = process.env.mongo;
+const dbUrl = process.env.mongo; //
 
 const BlogSchema = new Schema({
     title: {
