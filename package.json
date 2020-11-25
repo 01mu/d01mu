@@ -15,12 +15,12 @@
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "is-odd": "^3.0.1",
-    "mongodb": "^3.5.5",
-    "mongoose": "^5.9.4"
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.16"
   },
   "devDependencies": {
     "request": "^2.88.2",
-    "tape": "^4.13.2"
+    "tape": "^4.13.3"
   },
   "repository": {
     "type": "git",
